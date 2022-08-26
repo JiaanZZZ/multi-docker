@@ -2,6 +2,7 @@ version: '3'
 services:
   postgres:
     image: 'postgres:latest'
+    mem_limit: 128m
     environment:
       - POSTGRES_PASSWORD=postgres_password
   redis:
